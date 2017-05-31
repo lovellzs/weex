@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+	<meta charset="utf-8" /> 
+
+	<script type="text/javascript">
+		var date = new Date();
+		document.write("<p >点击这日期 " + date + "</p>");
+
+		document.write("<p >年 \t" + date.getFullYear() + "</p>");
+		document.write("<p >月 \t" + date.getMonth() + "</p>");
+		document.write("<p >日 \t" + date.getDate() + "</p>");
+		document.write("<a href='javascript:void(0);' >星期 \t" + date.getDay() + "</a>");
+		document.write("<p >时 \t" + date.getHours() + "</p>");
+		document.write("<p >分 \t" + date.getMinutes() + "</p>");
+		document.write("<p >秒 \t" + date.getSeconds() + "</p>");
+
+		var date1 = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate() + " " 
+					+ date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+
+		document.write("<p >完整时间 \t" + date1 + "</p>");
+
+		document.write("<p >完整时间 \t" + new Date(date1) + "</p>");
+		document.write("<p >完整时间 \t" + new Date(date1).toLocaleString() + "</p>");
+
+  	</script>
+</head>
+<body>
+
+</body>
+</html>
