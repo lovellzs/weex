@@ -1,0 +1,32 @@
+.tabbar_div {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 750px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #45b5f0;
+}
+
+.tabbar_item {
+  flex: 1;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabbar_item_default {
+  background-color: #45b5f0;
+}
+.tabbar_item_click {
+  background-color: #afddff;
+}
+
+.tabbar_text {
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+}
+
+

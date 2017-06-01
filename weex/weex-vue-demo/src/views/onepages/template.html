@@ -1,0 +1,12 @@
+<div>
+    <router-view style="flex:1"></router-view>
+    <div class="tabbar_div">
+        <div :class="['tabbar_item', itemIndex==0?'tabbar_item_click':'tabbar_item_default' ]" @click="itemClick(0)">
+            <text class="tabbar_text">one</text>
+        </div>
+        <div :class="['tabbar_item', itemIndex==1?'tabbar_item_click':'tabbar_item_default' ]" @click="itemClick(1)">
+            <text class="tabbar_text">two</text>
+        </div>
+
+    </div>
+</div>
