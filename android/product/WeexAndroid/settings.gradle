@@ -1,1 +1,11 @@
 include ':app'
+
+
+include ":WeexLib"
+project(":WeexLib").projectDir = new File("../../Libs/WeexLib")
+
+include ":BaseLib"
+project(":BaseLib").projectDir = new File("../../Libs/BaseLib")
+
+include ":Weex_SDK"
+project(":Weex_SDK").projectDir = new File("../../Libs/Weex_SDK/sdk")

@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "llzs.op.weex"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -30,6 +30,8 @@ dependencies {
     compile 'com.android.support:support-v4:23.1.1'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.alibaba:fastjson:1.1.46.android'
-    compile 'com.taobao.android:weex_sdk:0.10.0@aar'
 
+    compile project(':WeexLib')
+    compile project(':BaseLib')
+    compile project(':Weex_SDK')
 }

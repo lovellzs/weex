@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements IWXRenderListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().hide();
+        this.getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
         mWXSDKInstance = new WXSDKInstance(this);
